@@ -1,0 +1,63 @@
+{
+	"name": "Wait Pipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "Wait 5",
+				"type": "Wait",
+				"typeProperties": {
+					"waitTimeInSeconds": 5
+				}
+			},
+			{
+				"name": "Wait 4",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "Wait 5",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"typeProperties": {
+					"waitTimeInSeconds": 4
+				}
+			},
+			{
+				"name": "Wait 3",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "Wait 4",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"typeProperties": {
+					"waitTimeInSeconds": 3
+				}
+			},
+			{
+				"name": "Wait 2",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "Wait 3",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"typeProperties": {
+					"waitTimeInSeconds": 2
+				}
+			}
+		],
+		"folder": {
+			"name": "Pipeline1"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
