@@ -1,0 +1,14 @@
+{
+	"name": "Do Folders Matter",
+	"properties": {
+		"activities": [
+			{
+				"name": "Wait 10",
+				"type": "Wait",
+				"typeProperties": {
+					"waitTimeInSeconds": 10
+				}
+			}
+		]
+	}
+}
