@@ -54,10 +54,7 @@
 					"waitTimeInSeconds": 2
 				}
 			}
-		],
-		"folder": {
-			"name": "Pipeline1"
-		}
+		]
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }

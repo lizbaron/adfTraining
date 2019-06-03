@@ -1,6 +1,7 @@
 {
-	"name": "Do Folders Matter",
+	"name": "FoldersDoNotMatterInGit",
 	"properties": {
+		"description": "this pipeline was created to illustrate that organizing pipelines in folders in ADF is not reflected in github source control",
 		"activities": [
 			{
 				"name": "Wait 10",
