@@ -1,7 +1,7 @@
 {
-	"name": "FoldersDoNotMatterInGit",
+	"name": "FoldersAreAPropertyInJSONPipeline",
 	"properties": {
-		"description": "this pipeline was created to illustrate that organizing pipelines in folders in ADF is not reflected in github source control",
+		"description": "this pipeline is to illustrate where folder organization is reflected in the pipeline",
 		"activities": [
 			{
 				"name": "Wait 10",
@@ -10,6 +10,9 @@
 					"waitTimeInSeconds": 10
 				}
 			}
-		]
+		],
+		"folder": {
+			"name": "Morning Exercises"
+		}
 	}
 }

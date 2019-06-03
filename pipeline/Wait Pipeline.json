@@ -1,5 +1,5 @@
 {
-	"name": "Wait Pipeline Changed Name",
+	"name": "Wait Pipeline",
 	"properties": {
 		"activities": [
 			{
@@ -54,7 +54,10 @@
 					"waitTimeInSeconds": 2
 				}
 			}
-		]
+		],
+		"folder": {
+			"name": "Morning Exercises"
+		}
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }
