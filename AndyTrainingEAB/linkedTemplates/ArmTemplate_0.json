@@ -13,10 +13,11 @@
 	},
 	"resources": [
 		{
-			"name": "[concat(parameters('factoryName'), '/Do Folders Matter')]",
+			"name": "[concat(parameters('factoryName'), '/FoldersDoNotMatterInGit')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
+				"description": "this pipeline was created to illustrate that organizing pipelines in folders in ADF is not reflected in github source control",
 				"activities": [
 					{
 						"name": "Wait 10",
@@ -96,9 +97,6 @@
 						}
 					}
 				],
-				"folder": {
-					"name": "Pipeline1"
-				},
 				"annotations": []
 			},
 			"dependsOn": []
